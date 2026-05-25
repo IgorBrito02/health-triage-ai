@@ -18,18 +18,76 @@ Desenvolver um sistema inteligente capaz de:
 
 ---
 
-# 📁 Estrutura do Projeto
+# 🚀 Funcionalidades
 
-```text
-health-triage-ai/
-│
-├── patient_triage_ai.py
-├── hospital_analytics.py
-├── patients.csv
-├── .env
-├── requirements.txt
-└── README.md
-```
+## 🧠 Triagem Inteligente
+
+O sistema utiliza IA para:
+
+- analisar sintomas do paciente;
+- identificar nível de risco;
+- definir prioridade;
+- sugerir especialidade médica;
+- gerar orientações iniciais;
+- recomendar próximas ações.
+
+---
+
+## 📊 Análise Hospitalar
+
+O sistema também permite:
+
+- leitura de arquivos CSV;
+- análise de pacientes;
+- geração de gráficos;
+- identificação de gargalos;
+- criação de relatórios hospitalares inteligentes.
+
+---
+
+# 📸 Demonstração do Sistema
+
+## 🖥️ Interface Inicial
+
+Interface desenvolvida em Streamlit para entrada de dados clínicos.
+
+![Tela Inicial](images/01-tela-inicial.png)
+
+---
+
+## 🟢 Cenário 1 — Caso Leve
+
+Paciente jovem com sintomas leves.
+
+![Caso Leve](images/02-caso-leve-input.png)
+
+![Resultado Caso Leve](images/03-caso-leve-resultado.png)
+
+---
+
+## 🟡 Cenário 2 — Caso Moderado
+
+Paciente com febre e histórico de diabetes.
+
+![Caso Moderado](images/04-caso-moderado.png)
+
+---
+
+## 🔴 Cenário 3 — Caso Grave
+
+Paciente idoso com sintomas cardíacos graves.
+
+![Caso Grave](images/05-caso-grave-input.png)
+
+![JSON Crítico](images/06-caso-grave-json.png)
+
+---
+
+## 📊 Dashboard Final
+
+Visualização consolidada da triagem.
+
+![Dashboard](images/07-dashboard-final.png)
 
 ---
 
@@ -61,6 +119,7 @@ A IA:
 - Pandas
 - JSON
 - python-dotenv
+- Matplotlib
 
 ---
 
@@ -166,17 +225,92 @@ O sistema produz automaticamente:
 
 ---
 
+# 📁 Estrutura do Projeto
+
+```text
+health-triage-ai/
+│
+├── images/
+│   ├── 01-tela-inicial.png
+│   ├── 02-caso-leve-input.png
+│   ├── 03-caso-leve-resultado.png
+│   ├── 04-caso-moderado.png
+│   ├── 05-caso-grave-input.png
+│   ├── 06-caso-grave-json.png
+│   └── 07-dashboard-final.png
+│
+├── patient_triage_ai.py
+├── hospital_analytics.py
+├── patients.csv
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .env
+```
+
+---
+
 # 🧪 Como Executar
 
-## 1️⃣ Ativar ambiente virtual
+## 1️⃣ Clonar o repositório
+
+```bash
+git clone https://github.com/IgorBrito02/health-triage-ai.git
+```
+
+---
+
+## 2️⃣ Entrar na pasta
+
+```bash
+cd health-triage-ai
+```
+
+---
+
+## 3️⃣ Criar ambiente virtual
+
+```bash
+python -m venv venv
+```
+
+---
+
+## 4️⃣ Ativar ambiente virtual
+
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
+### Linux/Mac
+
+```bash
+source venv/bin/activate
+```
+
 ---
 
-## 2️⃣ Executar triagem
+## 5️⃣ Instalar dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 6️⃣ Configurar API
+
+Criar arquivo `.env`
+
+```env
+OPENAI_API_KEY=sua_chave_api
+```
+
+---
+
+## 7️⃣ Executar triagem inteligente
 
 ```bash
 streamlit run patient_triage_ai.py
@@ -184,20 +318,10 @@ streamlit run patient_triage_ai.py
 
 ---
 
-## 3️⃣ Executar analisador
+## 8️⃣ Executar analisador hospitalar
 
 ```bash
 streamlit run hospital_analytics.py
-```
-
----
-
-# 🔐 Configuração da API
-
-Arquivo `.env`
-
-```env
-OPENAI_API_KEY=sua_chave_api
 ```
 
 ---
@@ -293,3 +417,9 @@ Separar:
 # 🏁 Conclusão
 
 O projeto demonstra como Inteligência Artificial pode auxiliar processos hospitalares, oferecendo suporte à triagem clínica e análise operacional, contribuindo para decisões mais rápidas e eficientes no ambiente de saúde.
+
+---
+
+# 👨‍💻 Autor
+
+Desenvolvido por Igor Pinheiro de Brito.
