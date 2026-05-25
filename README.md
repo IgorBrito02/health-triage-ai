@@ -69,7 +69,7 @@ Paciente jovem com sintomas leves.
 
 Paciente com febre e histórico de diabetes.
 
-![Caso Moderado](images/04-caso-moderado.png)
+![Caso Moderado](images/04-caso-moderado-resultado.png)
 
 ---
 
